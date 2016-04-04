@@ -2,3 +2,5 @@ test
 webpack.config.js
 webpack.config.optimize.js
 .gitignore
+.idea
+.npmignore

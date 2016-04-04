@@ -1,6 +1,6 @@
 {
   "name": "template-string-optimize-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "template string optimize loader module for webpack",
   "main": "index.js",
   "scripts": {
@@ -13,5 +13,9 @@
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
     "webpack": "^1.12.10"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/chenjiahan/template-string-optimize-loader/issues"
+  },
+  "homepage": "https://github.com/chenjiahan/template-string-optimize-loader#readme"
 }
