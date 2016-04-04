@@ -21,7 +21,7 @@ module: {
 ## Example
 
 ``` javascript
-// ES6
+// ES6 template string HTML
 const template = data => `
     <!-- section start -->
     <section>
@@ -43,15 +43,9 @@ const template = data => `
     <!-- section end -->
 `;
 
-// ES5
-function(n,t){"use strict";var e=function(n){return"\n    <!-- section start -->\n    <section>\n      
-<h3>"+n.title+"</h3>\n        <div>"+n.date+"</div>\n        <dl>\n            <dt>Coffee</dt>\n            <dt>Black hot
-drink</dt>\n            <dt>Milk</dt>\n            <dd>\n                <ul>\n                   
-"+n.list.map(function(n){return"\n                        <li>"+n+"</li>\n                    "}).join("")+"\n              
-</ul>\n            </dd>\n        </dl>\n    </section>\n    <!-- section end -->\n"};
+// babel => uglify
+function(n,t){"use strict";var e=function(n){return"\n    <!-- section start -->\n    <section>\n        <h3>"+n.title+"</h3>\n        <div>"+n.date+"</div>\n        <dl>\n            <dt>Coffee</dt>\n            <dt>Black hot drink</dt>\n            <dt>Milk</dt>\n            <dd>\n                <ul>\n                    "+n.list.map(function(n){return"\n                        <li>"+n+"</li>\n                    "}).join("")+"\n                </ul>\n            </dd>\n        </dl>\n    </section>\n    <!-- section end -->\n"};
 
-// optimized
+// babel => template-string-optimize => uglify
 function(t,e){"use strict";var i=function(t){return"<section><h3>"+t.title+"</h3><div>"+t.date+"</div><dl><dt>Coffee</dt><dt>Black hot drink</dt><dt>Milk</dt><dd><ul>"+t.list.map(function(t){return"<li>"+t+"</li>"}).join("")+"</ul></dd></dl></section>"};
 ``` 
-
-    
