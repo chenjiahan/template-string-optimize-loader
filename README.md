@@ -18,6 +18,7 @@ template string optimize loader module for webpack
 
 ## Example
 
+    ``` javascript
     // ES6
     const template = data => `
         <!-- section start -->
@@ -45,4 +46,6 @@ template string optimize loader module for webpack
     
     // optimized
     function(t,e){"use strict";var i=function(t){return"<section><h3>"+t.title+"</h3><div>"+t.date+"</div><dl><dt>Coffee</dt><dt>Black hot drink</dt><dt>Milk</dt><dd><ul>"+t.list.map(function(t){return"<li>"+t+"</li>"}).join("")+"</ul></dd></dl></section>"};
+    ``` 
+    
     
