@@ -1,3 +1,4 @@
+var reg = /\n1323<!-- 123 -->/;
 const template = data => `
     <!-- section start -->
     <section>

@@ -4,7 +4,7 @@
   "description": "template string optimize loader module for webpack",
   "main": "index.js",
   "scripts": {
-    "test": " webpack -p && webpack -p --config webpack.config.optimize.js"
+    "test": " webpack && webpack --config webpack.config.optimize.js"
   },
   "author": "chenjiahan",
   "license": "ISC",
