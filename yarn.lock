@@ -10,9 +10,9 @@ acorn@^3.0.0:
   version "3.3.0"
   resolved "http://r.npm.sankuai.com/acorn/download/acorn-3.3.0.tgz#45e37fb39e8da3f25baee3ff5369e2bb5f22017a"
 
-acorn@^4.0.4:
-  version "4.0.4"
-  resolved "http://r.npm.sankuai.com/acorn/download/acorn-4.0.4.tgz#17a8d6a7a6c4ef538b814ec9abac2779293bf30a"
+acorn@^4.0.9:
+  version "4.0.9"
+  resolved "http://r.npm.sankuai.com/acorn/download/acorn-4.0.9.tgz#2d2eb458fe3f0e31062d56cf0b1839c5dc7bd288"
 
 align-text@^0.1.1, align-text@^0.1.3:
   version "0.1.4"
