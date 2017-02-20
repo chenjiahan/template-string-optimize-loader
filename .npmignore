@@ -4,3 +4,4 @@ webpack.config.optimize.js
 .gitignore
 .idea
 .npmignore
+yarn.lock

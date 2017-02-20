@@ -2,6 +2,7 @@ const acorn = require('acorn');
 const escodegen = require('escodegen');
 
 module.exports = function(source) {
+    this.cacheable();
     const tree = acorn.parse(source, { sourceType: 'module' });
     traverse(tree);
     return escodegen.generate(tree);
