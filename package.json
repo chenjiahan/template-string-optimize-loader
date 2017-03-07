@@ -1,6 +1,6 @@
 {
   "name": "template-string-optimize-loader",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "template string optimize loader module for webpack",
   "main": "index.js",
   "scripts": {
