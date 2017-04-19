@@ -1,10 +1,11 @@
 {
   "name": "template-string-optimize-loader",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "template string optimize loader module for webpack",
   "main": "index.js",
   "scripts": {
-    "test": " webpack && webpack --config webpack.config.optimize.js"
+    "test": " webpack && webpack --config webpack.config.optimize.js",
+    "release": "npm publish"
   },
   "author": "chenjiahan",
   "license": "ISC",

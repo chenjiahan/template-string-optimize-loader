@@ -19,7 +19,7 @@ function traverse(input) {
     else if (isObject(input)) {
         for (let key in input) {
             if (typeof input[key] === 'string') {
-                input[key] = input[key].replace(/(\n\s*)/g, '');
+                input[key] = input[key].replace(/(\n\s+)/g, '');
             }
             traverse(input[key]);
         }
