@@ -1,14 +1,24 @@
+const path = require('path');
+
 module.exports = {
-    entry: "./test/src/test.js",
+    entry: './test/src/test.js',
     output: {
-        path: "test/dist",
-        filename: "test.min.js"
+        path: path.resolve(__dirname, './test/dist'),
+        filename: 'test.optimize.js'
     },
     module: {
-        loaders: [
+        rules: [
             { 
                 test: /\.js$/, 
-                loader: "template-string-optimize!babel?presets[]=es2015"
+                use: [
+                    'template-string-optimize-loader',
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['es2015']
+                        }
+                    }
+                ]
             }
         ]
     }

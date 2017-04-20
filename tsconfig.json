@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "outDir": "lib",
+        "isolatedModules": false,
+        "experimentalDecorators": true,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "allowSyntheticDefaultImports": true,
+        "types": [
+            "acorn",
+            "escodegen"
+        ],
+        "lib": [
+            "es2015"
+        ]
+    },
+    "include": [
+        "./src/*.ts"
+    ],
+    "compileOnSave": false
+}

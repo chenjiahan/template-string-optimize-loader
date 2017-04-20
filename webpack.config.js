@@ -1,14 +1,21 @@
+const path = require('path');
+
 module.exports = {
-    entry: "./test/src/test.js",
+    entry: './test/src/test.js',
     output: {
-        path: "test/dist",
-        filename: "test.js"
+        path: path.resolve(__dirname, './test/dist'),
+        filename: 'test.js'
     },
     module: {
-        loaders: [
+        rules: [
             { 
                 test: /\.js$/, 
-                loader: "babel?presets[]=es2015"
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['es2015']
+                    }
+                }
             }
         ]
     }
