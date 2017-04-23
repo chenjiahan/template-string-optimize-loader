@@ -3,16 +3,19 @@ template string optimize loader module for webpack
 
 ## Installation
 
-    npm install template-string-optimize-loader --save-dev
+    npm i template-string-optimize-loader -D
     
 ## Usage
 
 ``` javascript
 module: {
-    loaders: [
+    rules: [
         {
             test: /\.js$/,
-            loader: 'template-string-optimize!babel'
+            use: [
+                'template-string-optimize-loader',
+                'babel-loader'
+            ]
         }
     ]
 }
