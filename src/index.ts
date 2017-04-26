@@ -9,7 +9,7 @@ const acornOptions = {
 } as acorn.Options;
 
 export = function (source: string): string {
-    this.cacheable && this.cacheable();
+    this && this.cacheable && this.cacheable();
     const tree = acorn.parse(source, acornOptions);
     traverse(tree);
     return escodegen.generate(tree);

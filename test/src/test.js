@@ -1,4 +1,4 @@
-var reg = /\n1323<!-- 123 -->/;
+const reg = /\n1323<!-- 123 -->/;
 const template = data => `
     <!-- section start -->
     <section>
@@ -19,6 +19,8 @@ const template = data => `
     </section>
     <!-- section end -->
 `;
+
+const breakLine = '\n';
 
 document.body.innerHTML = template({
     title : 'title',
