@@ -1,6 +1,6 @@
 {
   "name": "template-string-optimize-loader",
-  "version": "2.2.3",
+  "version": "3.0.0",
   "description": "template string optimize loader module for webpack",
   "main": "lib/index.js",
   "scripts": {
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/chenjiahan/template-string-optimize-loader#readme",
   "dependencies": {
-    "acorn": "^5.0.3",
-    "escodegen": "^1.8.1"
+    "acorn": "5.7.1",
+    "escodegen": "1.11.0"
   }
 }
